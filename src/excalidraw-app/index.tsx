@@ -156,10 +156,10 @@ const initializeScene = async (opts: {
   collabAPI: CollabAPI;
 }): Promise<
   { scene: ImportedDataState | null } & (
-  | { isExternalScene: true; id: string; key: string }
-  | { isExternalScene: false; id?: null; key?: null }
+    | { isExternalScene: true; id: string; key: string }
+    | { isExternalScene: false; id?: null; key?: null }
   )
-  > => {
+> => {
   const searchParams = new URLSearchParams(window.location.search);
   const id = searchParams.get("id");
   const jsonBackendMatch = window.location.hash.match(
@@ -250,11 +250,11 @@ const initializeScene = async (opts: {
   } else if (scene) {
     return isExternalScene && jsonBackendMatch
       ? {
-        scene,
-        isExternalScene,
-        id: jsonBackendMatch[1],
-        key: jsonBackendMatch[2],
-      }
+          scene,
+          isExternalScene,
+          id: jsonBackendMatch[1],
+          key: jsonBackendMatch[2],
+        }
       : { scene, isExternalScene: false };
   }
   return { scene: null, isExternalScene: false };
