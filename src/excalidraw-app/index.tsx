@@ -260,7 +260,9 @@ const initializeScene = async (opts: {
   return { scene: null, isExternalScene: false };
 };
 
-const PlusLinkJSX = ();
+const PlusLinkJSX = (
+  <p></p>
+);
 
 const ExcalidrawWrapper = () => {
   const [errorMessage, setErrorMessage] = useState("");
