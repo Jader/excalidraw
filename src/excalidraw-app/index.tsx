@@ -260,10 +260,6 @@ const initializeScene = async (opts: {
   return { scene: null, isExternalScene: false };
 };
 
-const PlusLinkJSX = (
-  <p></p>
-);
-
 const ExcalidrawWrapper = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const currentLangCode = languageDetector.detect() || defaultLang.code;
@@ -520,7 +516,6 @@ const ExcalidrawWrapper = () => {
         >
           {/* <GitHubCorner theme={appState.theme} dir={document.dir} /> */}
           {/* FIXME remove after 2021-05-20 */}
-          {PlusLinkJSX}
         </div>
       );
     },
@@ -577,7 +572,6 @@ const ExcalidrawWrapper = () => {
                 borderRadius: 12,
               }}
             >
-              {PlusLinkJSX}
             </div>
           </div>
         );
