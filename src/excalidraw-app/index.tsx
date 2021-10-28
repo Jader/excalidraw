@@ -571,8 +571,7 @@ const ExcalidrawWrapper = () => {
                 border: "1px dashed #aaa",
                 borderRadius: 12,
               }}
-            >
-            </div>
+            ></div>
           </div>
         );
       }
