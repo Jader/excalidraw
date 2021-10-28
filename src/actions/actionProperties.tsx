@@ -528,8 +528,8 @@ export const actionChangeFontFamily = register({
         icon: <FontFamilyCodeIcon theme={appState.theme} />,
       },
       {
-        value: FONT_FAMILY.ZHIWNDXSG,
-        text: t("labels.write"),
+        value: FONT_FAMILY.Xynt,
+        text: t("labels.xynt"),
         icon: <FontFamilyWriteIcon theme={appState.theme} />,
       },
     ];
