@@ -17,6 +17,7 @@ import {
   FontFamilyHandDrawnIcon,
   FontFamilyNormalIcon,
   FontFamilyWriteIcon,
+  FontFamilyEditIcon,
   FontSizeExtraLargeIcon,
   FontSizeLargeIcon,
   FontSizeMediumIcon,
@@ -528,9 +529,14 @@ export const actionChangeFontFamily = register({
         icon: <FontFamilyCodeIcon theme={appState.theme} />,
       },
       {
-        value: FONT_FAMILY.Xynt,
+        value: FONT_FAMILY.ZHIWNDXSG,
         text: t("labels.xynt"),
         icon: <FontFamilyWriteIcon theme={appState.theme} />,
+      },
+      {
+        value: FONT_FAMILY.新叶念体,
+        text: t("labels.xynt"),
+        icon: <FontFamilyEditIcon theme={appState.theme} />,
       },
     ];
 
